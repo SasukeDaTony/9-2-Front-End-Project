@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your House!</title>
+    <link rel="stylesheet" href="initial.css" />
+    <link rel="stylesheet" href="background_styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="parent grid">
+        <div class="child A intro">
+          <section>
+            <p>
+              A Song of Ice and Fire is a series of epic fantasy novels written
+              by the American novelist and screenwriter George R. R. Martin.<br/> An
+              HBO series was produced & released in 2011 & a spin-off series released 2022! This is a tribute to the first HBO series. <br/>Let the Game of Thrones Begin!
+            </p>
+          </section>
+        </div>
+        <div class="child B">
+          <div class="stark">
+            <form id="stark" class="stark house" data-search="stark">
+              <img
+                height="300px"
+                width="325px"
+                src="assets/StarkGif.gif"
+                alt="stark sigil gif"
+              />
+              <input
+                type="submit"
+                class="button"
+                name="stark"
+                value="House Stark"
+              />
+            </form>
+          </div>
+          <div class="baratheon">
+            <form class="baratheon house" data-search="baratheon">
+              <img
+                height="300px"
+                width="325px"
+                src="assets/BaratheonGif.gif"
+                alt="baratheon sigil gif"
+              />
+              <input
+                type="submit"
+                class="button"
+                name="baratheon"
+                value="House Baratheon"
+              />
+            </form>
+          </div>
+          <div class="targaryen">
+            <form data-search="targaryen" class="targaryen house">
+              <img
+                height="300px"
+                width="325px"
+                src="assets/fire&bloodGIF.gif"
+                alt="targaryen sigil gif"
+              />
+              <input
+                type="submit"
+                class="button"
+                name="targaryen"
+                value="House Targaryen"
+              />
+            </form>
+          </div>
+          <div class="lannister">
+            <form data-search="lannister" class="lannister house">
+              <img
+                src="assets/lannisterGIF.gif"
+                width="325px"
+                height="300"
+                alt="lannister sigil gif"
+              />
+              <input
+                type="submit"
+                class="button"
+                name="lannister"
+                value="House Lannister"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

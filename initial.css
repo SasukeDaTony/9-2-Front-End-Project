@@ -1,0 +1,47 @@
+/* .parent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+
+
+.intro {
+  background-color: black;
+  color: rgb(217, 50, 50);
+  opacity: 45%;
+  width: 300px;
+  height:fit-content;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.B {
+  display: flex;
+}
+
+.house {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: black;
+    color: brown;
+    font-family:fantasy;
+}
+
+.button:hover {
+    background-color: brown;
+    color: black;
+    font-family: fantasy;
+
+}
+.parent {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(4,1fr);
+}
+
