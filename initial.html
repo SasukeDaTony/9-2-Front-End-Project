@@ -13,38 +13,41 @@
   <body>
     <main>
       <div class="parent grid">
-        <div class="child A intro">
-          <section>
-            <p>
-              A Song of Ice and Fire is a series of epic fantasy novels written
-              by the American novelist and screenwriter George R. R. Martin.<br/> An
-              HBO series was produced & released in 2011 & a spin-off series released 2022! This is a tribute to the first HBO series. <br/>Let the Game of Thrones Begin!
-            </p>
-          </section>
-        </div>
-        <div class="child B">
+        <div class="child A">
           <div class="stark">
-            <form id="stark" class="stark house" data-search="stark">
+            <form id="stark" class="stark house" data-search="Stark">
               <img
                 height="300px"
                 width="325px"
-                src="assets/StarkGif.gif"
+                src="assets_initial/StarkGif.gif"
                 alt="stark sigil gif"
               />
-              <input
+              <a href="stark.html">
+                <input
                 type="submit"
                 class="button"
                 name="stark"
                 value="House Stark"
               />
+              </a>
+              
             </form>
           </div>
+          <section id="intro" class="intro">
+            <p>
+              A Song of Ice and Fire is a series of epic fantasy novels written
+              by the American novelist and screenwriter George R. R. Martin.<br />
+              An HBO series was produced & released in 2011 & a spin-off series
+              released 2022! This is a tribute to the first HBO series.
+              <br />Let the Game of Thrones Begin!
+            </p>
+          </section>
           <div class="baratheon">
-            <form class="baratheon house" data-search="baratheon">
+            <form class="baratheon house" data-search="Baratheon">
               <img
                 height="300px"
                 width="325px"
-                src="assets/BaratheonGif.gif"
+                src="assets_initial/BaratheonGif.gif"
                 alt="baratheon sigil gif"
               />
               <input
@@ -55,12 +58,15 @@
               />
             </form>
           </div>
+        </div>
+
+        <div class="child B">
           <div class="targaryen">
-            <form data-search="targaryen" class="targaryen house">
+            <form data-search="Targaryen" class="targaryen house">
               <img
                 height="300px"
                 width="325px"
-                src="assets/fire&bloodGIF.gif"
+                src="assets_initial/fire&bloodGIF.gif"
                 alt="targaryen sigil gif"
               />
               <input
@@ -71,10 +77,11 @@
               />
             </form>
           </div>
+
           <div class="lannister">
-            <form data-search="lannister" class="lannister house">
+            <form data-search="Lannister" class="lannister house">
               <img
-                src="assets/lannisterGIF.gif"
+                src="assets_initial/lannisterGIF.gif"
                 width="325px"
                 height="300"
                 alt="lannister sigil gif"
@@ -90,5 +97,7 @@
         </div>
       </div>
     </main>
+    <footer>
+    </footer>
   </body>
 </html>
