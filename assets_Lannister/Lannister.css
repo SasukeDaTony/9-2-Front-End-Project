@@ -1,4 +1,7 @@
-
+body {
+  background: url("LannisterBackground.jpeg") center fixed;
+  background-size: cover;
+}
 
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -17,8 +20,6 @@
 .Table-Of-Contents { grid-area: Table-Of-Contents; }
 
 .ContentsContainer { grid-area: ContentsContainer; }
-
-
 
 
 

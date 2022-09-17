@@ -4,6 +4,89 @@ body {
 }
 
 p {
+  text-indent: 15px;
   color: blue;
+  font-family: fantasy;
   background-color: aquamarine;
 }
+
+.Table-Of-Contents {
+  background-color: rgba(127, 255, 212, 0.516);
+  color: rgb(255, 255, 255);
+}
+
+.ContentsContainer {
+  color: aliceblue;
+  background-color: rgba(58, 91, 91, 0.635);
+  opacity: 80%;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". DropDownContainer ."
+    "Table-Of-Contents ContentsContainer ContentsContainer"
+    "Table-Of-Contents ContentsContainer ContentsContainer"
+    ". ContentsContainer ContentsContainer";
+}
+
+.DropDownContainer { grid-area: DropDownContainer; }
+
+.Table-Of-Contents { grid-area: Table-Of-Contents; }
+
+.ContentsContainer { grid-area: ContentsContainer; }
+
+
+
+
+
+
+.dropdown {
+  height: 40px;
+}
+
+/* Dropdown Button */
+.dropBtn {
+  background-color: #020000;
+  color: rgb(96, 9, 9);
+  font-family: fantasy;
+  font-size: larger;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position:absolute;
+  background-color: #0c0202;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: rgb(231, 227, 227);
+  margin-top: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  margin-top: 0;
+  color: rgb(116, 8, 8);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: fantasy;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropBtn {background-color: #7c0404;
+color: #020000;}

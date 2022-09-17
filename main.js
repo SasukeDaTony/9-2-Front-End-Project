@@ -1,18 +1,5 @@
-const apiGOT = "https://anapioficeandfire.com/api/houses";
-fetch(apiGOT)
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json[0].name + " icefireAPI");
-  })
-  .catch((err) => console.log(err));
 
-// const apiQuotes = 'https://api.gameofthronesquotes.xyz/v1/characters'
-//     fetch(apiQuotes)
-//     .then((res)=> res.json())
-//     .then((obj)=> {
-//         console.log(obj);
-//     })
-//     .catch((err)=> console.log(err));
+
 
 // random quote Generator functionality
 const randomQuote = "https://api.gameofthronesquotes.xyz/v1/random";
@@ -52,14 +39,14 @@ fetch(imgsAPI)
   .then((json) => {
     const imgDiv = document.createElement("div");
     imgDiv.classList.add("img-container");
-    console.log(json);
     const allForms = document.querySelectorAll("form");
+
     for (let forms of allForms) {
       forms.addEventListener("submit", (event) => {
         event.preventDefault();
         const house = event.target.dataset.search;
-        const imageArray = [];
         imgDiv.innerHTML = "";
+       
         for (let i = 0; i < json.length; i++) {
           const valid = whitelist[house] || [];
           const isWhitelisted = valid.some(
@@ -74,7 +61,6 @@ fetch(imgsAPI)
             imgTag.setAttribute("height", "150px");
             imgTag.setAttribute("width", "150px");
             imgDiv.append(imgTag);
-            console.log(valid);
           }
         }
         const childA = document.querySelector(".A");
