@@ -1,4 +1,9 @@
-
+body {
+  background: url("TargaryenBackground.png") center fixed;
+  background-size:cover;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
 
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -20,6 +25,10 @@
 
 
 
+.container .DropDownContainer .dropdown {
+  display: flex;
+  justify-content: center;
+}
 
 
 

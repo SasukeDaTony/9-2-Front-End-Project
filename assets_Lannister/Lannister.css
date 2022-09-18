@@ -3,9 +3,9 @@ body {
   background-size: cover;
 }
 
+
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -21,12 +21,48 @@ body {
 
 .ContentsContainer { grid-area: ContentsContainer; }
 
+#submit {
+color:goldenrod;
+ background-color:black;
+ width: min-content;
+}
+
+.container .DropDownContainer .dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  font-family: fantasy;
+  color:goldenrod;
+  background-color: rgba(67, 0, 0, 0.928);
+  text-align:left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+.form-container label {
+flex-direction: row;
+justify-content: flex-end;
+width: fit-content;
+padding-right: 0%;
+margin-right:0%;
+}
 
 
-
-
-
-
+p {
+  font-family: fantasy;
+  color:goldenrod;
+  background-color: rgba(67, 0, 0, 0.928);
+}
 
 .dropdown {
     height: 40px;

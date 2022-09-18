@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Lannister</title>
     <link  rel="stylesheet" href="Lannister.css"/>
+    <script defer src="Lannister.js"></script>
 </head>
 <header>
-    <div class="dropdown">
-        <button class="dropBtn">Menu</button>
-  
-        <ul class="dropdown-content">
-          <li>
-            <a href="../initial.html">Home Page</a>
-          </li>
-          <li>
-            <a href = "../assets_Baratheon/Baratheon.html">House Baratheon</a>
-          </li>
-          <li>
-            <a href = "../assets_Targaryen/Targaryen.Html">House Targaryen</a>
-          </li>
-          <li>
-            <a href="../assets_Stark/stark.html">House Stark</a>
-          </li>
-        </ul>
-      </div>
-  
+ 
 </header>
 <body>
-    <h1>Lannister</h1> 
+    <h1></h1> 
     <div class="container">
-      <div class="DropDownContainer"></div>
-      <div class="Table-Of-Contents"></div>
-      <div class="ContentsContainer"></div>
+      <div class="DropDownContainer">
+        <div class="dropdown">
+          <button class="dropBtn">Menu</button>
+      
+          <ul class="dropdown-content">
+            <li>
+              <a href="../Index.html">Home Page</a>
+            </li>
+            <li>
+              <a href = "../assets_Baratheon/Baratheon.html">House Baratheon</a>
+            </li>
+            <li>
+              <a href = "../assets_Targaryen/Targaryen.Html">House Targaryen</a>
+            </li>
+            <li>
+              <a href="../assets_Stark/stark.html">House Stark</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="Table-Of-Contents">
+        <div class="form-container">
+          <form>
+            
+            <label for="cersei">Cersei Lannister <input value= 'Cersei Lannister' type="radio" name="lannister" id='cersei' /></label>
+            
+            <label for="tyrion">Tyrion Lannister<input type="radio"  value = 'Tyrion Lannister' id="tyrion" name="lannister"/></label>
+            
+            <label for="tywin">Tywin Lannister <input type="radio" id="tywin"  value="Tywin Lannister" name="lannister"/></label>
+            
+            <label for="jaime">Jaime Lannister<input type="radio" id="jaime" value="Jaime Lannister" name="lannister"/></label>
+            <input id="submit" type="submit" value="Get Quotes" name="submit"/>
+          </form>
+        </div>
+      </div>
+      <div class="ContentsContainer">
+      </div>
     </div>
 </body>
 </html>

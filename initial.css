@@ -1,4 +1,7 @@
-
+header .dropdown {
+  display: flex;
+  justify-content: center;
+}
 .intro {
   background-color: black;
   color: rgb(217, 50, 50);
@@ -50,6 +53,16 @@
   color: rgb(12, 10, 10);
   font-family: fantasy;
   align-self: flex-end;
+}
+
+.image-div span {
+  font-family: fantasy;
+  background-color: #aa740f;
+  color: #000000;
+  font-size: medium;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .img-container {

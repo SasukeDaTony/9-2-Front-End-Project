@@ -45,7 +45,10 @@ p {
 
 
 
-
+.container .DropDownContainer .dropdown {
+  display: flex;
+  justify-content: center;
+}
 
 .dropdown {
   height: 40px;
