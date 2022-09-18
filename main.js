@@ -16,13 +16,14 @@ fetch(randomQuote)
     Targ.after(container);
     container.classList.add("quote-container");
     container.append(quote);
+    // adds Name and house member for quote
     const speaker = document.createElement("p");
     const name = json.character.name;
     speaker.classList.add("speaker");
     speaker.textContent = name + " from " + json.character.house.name;
     quote.after(speaker);
-    //creates button for new quote
-    const getQuote = document.createElement("input");
+     //creates button for new quote
+    // const getQuote = document.createElement("input");
   });
 
 
@@ -30,6 +31,7 @@ fetch(randomQuote)
 // grabs all form tags and sets up a loop to add event listeners. each button console logs the house
 
 const imgsAPI = "https://thronesapi.com/api/v2/Characters";
+
 
 const whitelist = { Stark: [{ first: "Jon", last: "Snow" }] };
 
@@ -59,7 +61,7 @@ fetch(imgsAPI)
             const imgURL = json[i].imageUrl;
             imgTag.setAttribute("src", `${imgURL}`);
             imgTag.setAttribute("height", "150px");
-            imgTag.setAttribute("width", "150px");
+            imgTag.setAttribute("width", "175x");
             imgDiv.append(imgTag);
           }
         }

@@ -13,6 +13,8 @@ p {
 .Table-Of-Contents {
   background-color: rgba(127, 255, 212, 0.516);
   color: rgb(255, 255, 255);
+  height: 75%;
+  width: 75%;
 }
 
 .ContentsContainer {
